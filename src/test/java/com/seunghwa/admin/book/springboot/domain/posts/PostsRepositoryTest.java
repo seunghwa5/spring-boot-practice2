@@ -40,8 +40,8 @@ public class PostsRepositoryTest {
         List<Posts> postsList = postsRepository.findAll();
 
         Posts posts = postsList.get(0);
-        assertThat(posts.getTitle().isEqualtTo(title));
-        assertThat(posts.getContent().isEqualtTo(content));
+        assertThat(posts.getTitle()).isEqualTo(title);
+        assertThat(posts.getContent()).isEqualTo(content);
 
 
 
